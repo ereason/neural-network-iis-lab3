@@ -1,0 +1,92 @@
+"/Users/george/Files/NSTU/нейронные сети/lab3/venv/bin/python" /Users/george/Files/NSTU/нейронные сети/lab3/Task4_3_10.py 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 30, 30, 32)        896       
+                                                                 
+ max_pooling2d (MaxPooling2  (None, 15, 15, 32)        0         
+ D)                                                              
+                                                                 
+ conv2d_1 (Conv2D)           (None, 13, 13, 64)        18496     
+                                                                 
+ max_pooling2d_1 (MaxPoolin  (None, 6, 6, 64)          0         
+ g2D)                                                            
+                                                                 
+ conv2d_2 (Conv2D)           (None, 4, 4, 64)          36928     
+                                                                 
+=================================================================
+Total params: 56320 (220.00 KB)
+Trainable params: 56320 (220.00 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 30, 30, 32)        896       
+                                                                 
+ max_pooling2d (MaxPooling2  (None, 15, 15, 32)        0         
+ D)                                                              
+                                                                 
+ conv2d_1 (Conv2D)           (None, 13, 13, 64)        18496     
+                                                                 
+ max_pooling2d_1 (MaxPoolin  (None, 6, 6, 64)          0         
+ g2D)                                                            
+                                                                 
+ conv2d_2 (Conv2D)           (None, 4, 4, 64)          36928     
+                                                                 
+ flatten (Flatten)           (None, 1024)              0         
+                                                                 
+ dense (Dense)               (None, 64)                65600     
+                                                                 
+ dense_1 (Dense)             (None, 10)                650       
+                                                                 
+=================================================================
+Total params: 122570 (478.79 KB)
+Trainable params: 122570 (478.79 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 1.5240 - accuracy: 0.4428 - val_loss: 1.2351 - val_accuracy: 0.5524
+Epoch 2/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 1.1689 - accuracy: 0.5856 - val_loss: 1.0843 - val_accuracy: 0.6139
+Epoch 3/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 1.0185 - accuracy: 0.6418 - val_loss: 1.0187 - val_accuracy: 0.6413
+Epoch 4/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.9237 - accuracy: 0.6757 - val_loss: 0.9611 - val_accuracy: 0.6646
+Epoch 5/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.8483 - accuracy: 0.7023 - val_loss: 1.0408 - val_accuracy: 0.6452
+Epoch 6/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.7935 - accuracy: 0.7219 - val_loss: 0.9255 - val_accuracy: 0.6875
+Epoch 7/20
+1563/1563 [==============================] - 17s 11ms/step - loss: 0.7453 - accuracy: 0.7402 - val_loss: 0.8622 - val_accuracy: 0.7026
+Epoch 8/20
+1563/1563 [==============================] - 16s 11ms/step - loss: 0.7054 - accuracy: 0.7527 - val_loss: 0.8986 - val_accuracy: 0.6969
+Epoch 9/20
+1563/1563 [==============================] - 17s 11ms/step - loss: 0.6689 - accuracy: 0.7645 - val_loss: 0.8510 - val_accuracy: 0.7116
+Epoch 10/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.6378 - accuracy: 0.7762 - val_loss: 0.8953 - val_accuracy: 0.7046
+Epoch 11/20
+1563/1563 [==============================] - 17s 11ms/step - loss: 0.6081 - accuracy: 0.7855 - val_loss: 0.8750 - val_accuracy: 0.7060
+Epoch 12/20
+1563/1563 [==============================] - 16s 11ms/step - loss: 0.5832 - accuracy: 0.7952 - val_loss: 0.8654 - val_accuracy: 0.7178
+Epoch 13/20
+1563/1563 [==============================] - 17s 11ms/step - loss: 0.5529 - accuracy: 0.8052 - val_loss: 0.8980 - val_accuracy: 0.7133
+Epoch 14/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.5245 - accuracy: 0.8138 - val_loss: 0.9222 - val_accuracy: 0.7125
+Epoch 15/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.5004 - accuracy: 0.8220 - val_loss: 0.9467 - val_accuracy: 0.7035
+Epoch 16/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.4797 - accuracy: 0.8287 - val_loss: 1.0050 - val_accuracy: 0.7008
+Epoch 17/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.4528 - accuracy: 0.8384 - val_loss: 1.0333 - val_accuracy: 0.6981
+Epoch 18/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.4310 - accuracy: 0.8454 - val_loss: 1.0301 - val_accuracy: 0.7021
+Epoch 19/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.4157 - accuracy: 0.8514 - val_loss: 1.0689 - val_accuracy: 0.6961
+Epoch 20/20
+1563/1563 [==============================] - 16s 10ms/step - loss: 0.3882 - accuracy: 0.8599 - val_loss: 1.1236 - val_accuracy: 0.6895
+313/313 - 1s - loss: 1.1236 - accuracy: 0.6895 - 1s/epoch - 3ms/step
+0.6894999742507935
+Fit time 325.7832360267639
